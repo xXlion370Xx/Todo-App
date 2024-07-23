@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, computed, effect, inject, Injector, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Task } from '../../models/task.model';
@@ -8,7 +8,7 @@ import { take } from 'rxjs';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, ReactiveFormsModule],
+  imports: [RouterOutlet, ReactiveFormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
